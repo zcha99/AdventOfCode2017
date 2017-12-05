@@ -9,11 +9,9 @@ for i in range(len(tal)):
     global svar
     if (i + talc) <= q:
         if tal[i] == tal[i+talc]:
-            print "if", i
             svar += int(tal[i])
     else:
         if tal[i] == tal[i-talc]:
-            print "else", i
             svar += int(tal[i])
 
 print svar
